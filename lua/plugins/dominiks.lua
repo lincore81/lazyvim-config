@@ -140,6 +140,39 @@ return {
     "nvimdev/dashboard-nvim",
     opts = {
       config = {
+        footer = {},
+        center = {
+          {
+            action = "ene | startinsert",
+            desc = " New File",
+            icon = " ",
+            key = "n",
+          },
+          {
+            action = "lua LazyVim.pick.config_files()()",
+            desc = " Config",
+            icon = " ",
+            key = "c",
+          },
+          {
+            action = 'lua require("persistence").load()',
+            desc = " Restore Session",
+            icon = " ",
+            key = "s",
+          },
+          {
+            action = "LazyExtras",
+            desc = " Lazy Extras",
+            icon = " ",
+            key = "x",
+          },
+          {
+            action = "Lazy",
+            desc = " Lazy",
+            icon = "󰒲 ",
+            key = "l",
+          },
+        },
         header = {
           "",
           "",
